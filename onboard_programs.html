@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enigma</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="Style/class.css" type="text/css">
+    <link rel="stylesheet" href="Style/main_Style.css" type="text/css">
+    <link rel="stylesheet" href="Style/menu.css" type="text/css">
+    <style>
+      .small_table {
+        padding-left: 30px;
+        padding-top: 10px;
+      }
+      .small_table th {
+        padding-left: 20px;
+        text-align: left;
+        width: 220px;
+      }
+      .info_table td:nth-child(1){
+        max-width: 140px;
+        min-width: 140px;
+      }
+      .info_table tr {
+        text-indent: 0px;
+        height: 32px;
+        text-align: center;
+      }
+      .info_table td:nth-child(1) {
+        text-align: left;
+      }
+    </style>
+</head>
+<body>
+  <div class = "main_text">
+    <h2>1. Стабилизация орудийных башен</h2>
+    <div>За счёт повышенных затрат энергии на
+      наведение и стабилизацию орудий при
+      стрельбе достигается увеличение
+      огневой мощи каждого из орудий.</div>
+    <table class = "info_table" style="max-width: 400px; min-width: 400px;">
+        <tr>
+            <td></td>
+            <td>1 lvl</td>
+            <td>2 lvl</td>
+            <td>3 lvl</td>
+            <td>4 lvl</td>
+            <td>5 lvl</td>
+        </tr>
+        <tr class = "positive">
+            <td>мощность орудий</td>
+            <td>+10%</td>
+            <td>+15%</td>
+            <td>+20%</td>
+            <td>+25%</td>
+            <td>+30%</td>
+        </tr>
+        <tr class = "negative">
+            <td>энергопотребление орудий</td>
+            <td>+22%</td>
+            <td>+29%</td>
+            <td>+36%</td>
+            <td>+43%</td>
+            <td>+50%</td>
+        </tr>
+    </table>
+    <table class = "small_table">
+      <tr>
+        <th>Требования для изучения:</th>
+      </tr>
+      <tr>
+        <td>1. Стрелок</td>
+      </tr>
+      <tr>
+        <td>2. Техник</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class = "main_text">
+    <h2>2. Тепловые ловушки</h2>
+    <div>Сканер анализирует траекторию выстрела и выпускает 
+      энергетический всплеск на небольшом отдалении
+      от корабля, что может увести выстрел от обшивки.
+      Минус этой системы в том, что эти же всплески ухудшают
+      наведение орудийных платформ и самого корабля.</div>
+    <table class = "info_table" style="max-width: 400px; min-width: 400px;">
+        <tr>
+            <td></td>
+            <td>1 lvl</td>
+            <td>2 lvl</td>
+            <td>3 lvl</td>
+            <td>4 lvl</td>
+            <td>5 lvl</td>
+        </tr>
+        <tr class = "positive">
+            <td>шанс срабатывания навыка пилота</td>
+            <td>+8%</td>
+            <td>+10%</td>
+            <td>+12%</td>
+            <td>+14%</td>
+            <td>+16%</td>
+        </tr>
+        <tr class = "negative">
+            <td>мощность орудий</td>
+            <td>-22%</td>
+            <td>-19%</td>
+            <td>-16%</td>
+            <td>-13%</td>
+            <td>-10%</td>
+        </tr>
+    </table>
+    <table class = "small_table">
+      <tr>
+        <th>Требования для изучения:</th>
+      </tr>
+      <tr>
+        <td>1. Пилот</td>
+      </tr>
+      <tr>
+        <td>2. Синтетик</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class = "main_text">
+    <h2>3. Устойчивость и управляемость</h2>
+    <div>Перепрограммирует системы на повышенную манёвренность.
+      Однако, при резких манёврах снижается эффективность
+      защитного экрана, а дроиды не успевают
+      за движением корабля и часто простаивают.</div>
+    <table class = "info_table" style="max-width: 400px; min-width: 400px;">
+        <tr>
+            <td></td>
+            <td>1 lvl</td>
+            <td>2 lvl</td>
+            <td>3 lvl</td>
+            <td>4 lvl</td>
+            <td>5 lvl</td>
+        </tr>
+        <tr class = "positive">
+            <td>скорость двигателя</td>
+            <td>+30</td>
+            <td>+40</td>
+            <td>+50</td>
+            <td>+60</td>
+            <td>+70</td>
+        </tr>
+        <tr class = "positive">
+            <td>навык пилота</td>
+            <td>+1</td>
+            <td>+1</td>
+            <td>+2</td>
+            <td>+2</td>
+            <td>+3</td>
+        </tr>
+        <tr class = "negative">
+          <td>мощность ремонтного модуля</td>
+          <td>-40%</td>
+          <td>-35%</td>
+          <td>-30%</td>
+          <td>-25%</td>
+          <td>-20%</td>
+      </tr>
+        <tr class = "negative">
+            <td>мощность защитного экрана</td>
+            <td>-30%</td>
+            <td>-26%</td>
+            <td>-22%</td>
+            <td>-18%</td>
+            <td>-14%</td>
+        </tr>
+    </table>
+    <table class = "small_table">
+      <tr>
+        <th>Требования для изучения:</th>
+      </tr>
+      <tr>
+        <td>1. Пилот</td>
+      </tr>
+      <tr>
+        <td>2. Убийца</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class = "main_text">
+    <h2>4. Полная тяга двигателя</h2>
+    <div>Критически нагружает сопла двигателя, что
+      сказывается на сроке службы оборудования.
+      За счёт разгона мощностей сопел, наблюдается
+      огромная прибавка к скорости двигателя.</div>
+    <table class = "info_table" style="max-width: 400px; min-width: 400px;">
+        <tr>
+            <td></td>
+            <td>1 lvl</td>
+            <td>2 lvl</td>
+            <td>3 lvl</td>
+            <td>4 lvl</td>
+            <td>5 lvl</td>
+        </tr>
+        <tr class = "positive">
+            <td>скорость двигателя</td>
+            <td>+30%</td>
+            <td>+45%</td>
+            <td>+60%</td>
+            <td>+75%</td>
+            <td>+90%</td>
+        </tr>
+        <tr class = "negative">
+            <td>износ двигателя<br>(от макс.)</td>
+            <td>6%</td>
+            <td>7.5%</td>
+            <td>9%</td>
+            <td>10.5%</td>
+            <td>12%</td>
+        </tr>
+    </table>
+    <table class = "small_table">
+      <tr>
+        <th>Требования для изучения:</th>
+      </tr>
+      <tr>
+        <td>1. Исследователь</td>
+      </tr>
+      <tr>
+        <td>2. Торговец</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class = "main_text">
+    <h2>5. Композитная броня</h2>
+    <div>За счёт уменьшения скорости, у систем
+      защиты появляется возможность генерации
+      нескольких уровней защиты. Повышается защита
+      экрана корабля и самой обшивки. Также на низких
+      скоростях дроидам становится проще работать.</div>
+    <table class = "info_table" style="max-width: 400px; min-width: 400px;">
+        <tr>
+            <td></td>
+            <td>1 lvl</td>
+            <td>2 lvl</td>
+            <td>3 lvl</td>
+            <td>4 lvl</td>
+            <td>5 lvl</td>
+        </tr>
+        <tr class = "positive">
+            <td>сопротивление корпуса</td>
+            <td>+1%</td>
+            <td>+1%</td>
+            <td>+2%</td>
+            <td>+2%</td>
+            <td>+3%</td>
+        </tr>
+        <tr class = "positive">
+            <td>мощность защитного экрана</td>
+            <td>+10</td>
+            <td>+20</td>
+            <td>+30</td>
+            <td>+40</td>
+            <td>+50</td>
+        </tr>
+        <tr class = "positive">
+            <td>мощность ремонтного модуля</td>
+            <td>+6</td>
+            <td>+9</td>
+            <td>+12</td>
+            <td>+15</td>
+            <td>+18</td>
+        </tr>
+        <tr class = "negative">
+            <td>скорость двигателя</td>
+            <td>-15</td>
+            <td>-30</td>
+            <td>-45</td>
+            <td>-60</td>
+            <td>-75</td>
+        </tr>
+    </table>
+    <table class = "small_table">
+      <tr>
+        <th>Требования для изучения:</th>
+      </tr>
+      <tr>
+        <td>1. Пилот</td>
+      </tr>
+      <tr>
+        <td>2. Торговец</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class = "main_text">
+    <h2>6. Электромагнитные ловушки</h2>
+    <div>Добавляет к снарядам дополнительные
+      электромагнитные насадки, которые при
+      попадании в обшивку повреждают электические
+      цепи корабля, тем самым замедляя его и
+      снижая эффективность защитного экрана.</div>
+    <table class = "info_table" style="max-width: 400px; min-width: 400px;">
+        <tr>
+            <td></td>
+            <td>1 lvl</td>
+            <td>2 lvl</td>
+            <td>3 lvl</td>
+            <td>4 lvl</td>
+            <td>5 lvl</td>
+        </tr>
+        <tr class = "positive">
+            <td>скорость двигателя противника</td>
+            <td>-40</td>
+            <td>-60</td>
+            <td>-80</td>
+            <td>-100</td>
+            <td>-120</td>
+        </tr>
+        <tr class = "positive">
+            <td>скорость восстановления защитного экрана противника</td>
+            <td>-20%</td>
+            <td>-25%</td>
+            <td>-30%</td>
+            <td>-35%</td>
+            <td>-40%</td>
+        </tr>
+        <tr class = "negative">
+            <td>энергопотребление</td>
+            <td>+3.6</td>
+            <td>+4.5</td>
+            <td>+5.4</td>
+            <td>+6.3</td>
+            <td>+7.2</td>
+        </tr>
+    </table>
+    <table class = "small_table">
+      <tr>
+        <th>Требования для изучения:</th>
+      </tr>
+      <tr>
+        <td>1. Техник</td>
+      </tr>
+      <tr>
+        <td>2. Убийца</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class = "main_text">
+    <h2>7. Прицельный обстрел</h2>
+    <div>За счёт уменьшения скорости, уменьшается
+      разброс оружия и каждое орудие способно
+      попадать в одну точку несколько раз,
+      буквально, разрывая обшивку корабля.</div>
+    <table class = "info_table" style="max-width: 400px; min-width: 400px;">
+        <tr>
+            <td></td>
+            <td>1 lvl</td>
+            <td>2 lvl</td>
+            <td>3 lvl</td>
+            <td>4 lvl</td>
+            <td>5 lvl</td>
+        </tr>
+        <tr class = "positive">
+            <td>мощность орудий</td>
+            <td>+12%</td>
+            <td>+16%</td>
+            <td>+20%</td>
+            <td>+24%</td>
+            <td>+28%</td>
+        </tr>
+        <tr class = "negative">
+            <td>скорость двигателя</td>
+            <td>-30</td>
+            <td>-40</td>
+            <td>-50</td>
+            <td>-60</td>
+            <td>-70</td>
+        </tr>
+    </table>
+    <table class = "small_table">
+      <tr>
+        <th>Требования для изучения:</th>
+      </tr>
+      <tr>
+        <td>1. Стрелок</td>
+      </tr>
+      <tr>
+        <td>2. Убийца</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class = "main_text">
+    <h2>8. Динамическая защита</h2>
+    <div>Генератор защитного экрана создаёт
+      дополнительные импульсы по траектории
+      обстрела, что увеличивает стойкость к урону,
+      но эти же импульсы возникат по траектории
+      движения ремонтных дроидов, тем самым замедляя их.</div>
+    <table class = "info_table" style="max-width: 400px; min-width: 400px;">
+        <tr>
+            <td></td>
+            <td>1 lvl</td>
+            <td>2 lvl</td>
+            <td>3 lvl</td>
+            <td>4 lvl</td>
+            <td>5 lvl</td>
+        </tr>
+        <tr class = "positive">
+            <td>сопротивление корпуса</td>
+            <td>+3%</td>
+            <td>+4%</td>
+            <td>+5%</td>
+            <td>+6%</td>
+            <td>+7%</td>
+        </tr>
+        <tr class = "negative">
+            <td>мощность ремонтного модуля</td>
+            <td>-10</td>
+            <td>-12</td>
+            <td>-14</td>
+            <td>-16</td>
+            <td>-18</td>
+        </tr>
+    </table>
+    <table class = "small_table">
+      <tr>
+        <th>Требования для изучения:</th>
+      </tr>
+      <tr>
+        <td>1. Пилот</td>
+      </tr>
+      <tr>
+        <td>2. Исследователь</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class = "main_text">
+    <h2>9. Энергетический щит</h2>
+    <div>Ионизирует внешнюю обшивку корабля, за счёт чего
+      достигается эффект заземления, который отводит
+      часть энергии, получаемой в результате
+      обстрела, уменьшая получаемые повреждения.</div>
+    <table class = "info_table" style="max-width: 400px; min-width: 400px;">
+        <tr>
+            <td></td>
+            <td>1 lvl</td>
+            <td>2 lvl</td>
+            <td>3 lvl</td>
+            <td>4 lvl</td>
+            <td>5 lvl</td>
+        </tr>
+        <tr class = "positive">
+            <td>сопротивление лазерным повреждениям</td>
+            <td>+2%</td>
+            <td>+5%</td>
+            <td>+8%</td>
+            <td>+11%</td>
+            <td>+14%</td>
+        </tr>
+        <tr class = "positive">
+            <td>сопротивление поляризаторным повреждениям</td>
+            <td>+3%</td>
+            <td>+4%</td>
+            <td>+5%</td>
+            <td>+6%</td>
+            <td>+7%</td>
+        </tr>
+        <tr class = "positive">
+            <td>сопротивление электрическим повреждениям</td>
+            <td>+3%</td>
+            <td>+4%</td>
+            <td>+5%</td>
+            <td>+6%</td>
+            <td>+7%</td>
+        </tr>
+        <tr class = "negative">
+            <td>энергопотребление</td>
+            <td>+1.2</td>
+            <td>+1.5</td>
+            <td>+1.8</td>
+            <td>+2.1</td>
+            <td>+2.4</td>
+        </tr>
+    </table>
+    <table class = "small_table">
+      <tr>
+        <th>Требования для изучения:</th>
+      </tr>
+      <tr>
+        <td>1. Техник</td>
+      </tr>
+      <tr>
+        <td>2. Торговец</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class = "main_text">
+    <h2>10. Комбинированная броня</h2>
+    <div>Программа изменяет конструкцию корабля, перестраивая
+      внешний слой обшивки на более шипастый. Данная
+      конструкция значительно повышает защиту от взрывов,
+      за счёт поглощения разрывной силы шипами.</div>
+    <table class = "info_table" style="max-width: 400px; min-width: 400px;">
+        <tr>
+            <td></td>
+            <td>1 lvl</td>
+            <td>2 lvl</td>
+            <td>3 lvl</td>
+            <td>4 lvl</td>
+            <td>5 lvl</td>
+        </tr>
+        <tr class = "positive">
+            <td>сопротивление разрывным повреждениям</td>
+            <td>+4%</td>
+            <td>+7%</td>
+            <td>+10%</td>
+            <td>+13%</td>
+            <td>+16%</td>
+        </tr>
+        <tr class = "positive">
+            <td>сопротивление ракетным повреждениям</td>
+            <td>+2%</td>
+            <td>+4%</td>
+            <td>+6%</td>
+            <td>+8%</td>
+            <td>+10%</td>
+        </tr>
+        <tr class = "negative">
+            <td>энергопотребление</td>
+            <td>+0.8</td>
+            <td>+1.1</td>
+            <td>+1.4</td>
+            <td>+1.7</td>
+            <td>+2</td>
+        </tr>
+    </table>
+    <table class = "small_table">
+      <tr>
+        <th>Требования для изучения:</th>
+      </tr>
+      <tr>
+        <td>1. Техник</td>
+      </tr>
+      <tr>
+        <td>2. Синтетик</td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class = "main_text">
+    <h2>11. Оборонительное вооружение</h2>
+    <div>Перепрограмирует пусковые установки орудийных платформ
+      на отстрел ближайших целей. Орудия концентрируют часть
+      своей ударной мощи на ликвидацию ракет, а также способны
+      сбивать траекторию электромагнитных волн поляризаторного оружия.</div>
+    <table class = "info_table" style="max-width: 400px; min-width: 400px;">
+        <tr>
+            <td></td>
+            <td>1 lvl</td>
+            <td>2 lvl</td>
+            <td>3 lvl</td>
+            <td>4 lvl</td>
+            <td>5 lvl</td>
+        </tr>
+        <tr class = "positive">
+            <td>сопротивление поляризаторным повреждениям</td>
+            <td>+5%</td>
+            <td>+7%</td>
+            <td>+9%</td>
+            <td>+11%</td>
+            <td>+13%</td>
+        </tr>
+        <tr class = "positive">
+            <td>сопротивление ракетным повреждениям</td>
+            <td>+20%</td>
+            <td>+28%</td>
+            <td>+36%</td>
+            <td>+44%</td>
+            <td>+52%</td>
+        </tr>
+        <tr class = "negative">
+            <td>мощность орудий</td>
+            <td>-6%</td>
+            <td>-8%</td>
+            <td>-10%</td>
+            <td>-12%</td>
+            <td>-14%</td>
+        </tr>
+    </table>
+    <table class = "small_table">
+      <tr>
+        <th>Требования для изучения:</th>
+      </tr>
+      <tr>
+        <td>1. Стрелок</td>
+      </tr>
+      <tr>
+        <td>2. Одержимый</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class = "main_text">
+    <h2>12. Реактивность материи</h2>
+    <div>За счёт подачи энергии в топливный бак,
+      происходит реакция между остатками топлива в баке
+      и поступающей энергией. При верном взаимодействии,
+      можно генерерировать незначительное количество топлива.</div>
+    <table class = "info_table" style="max-width: 400px; min-width: 400px;">
+        <tr>
+            <td></td>
+            <td>1 lvl</td>
+            <td>2 lvl</td>
+            <td>3 lvl</td>
+            <td>4 lvl</td>
+            <td>5 lvl</td>
+        </tr>
+        <tr class = "positive">
+            <td>генерация топлива при работе</td>
+            <td>4</td>
+            <td>8</td>
+            <td>12</td>
+            <td>16</td>
+            <td>20</td>
+        </tr>
+        <tr class = "negative">
+            <td>энергопотребление при работе</td>
+            <td>30</td>
+            <td>45</td>
+            <td>60</td>
+            <td>75</td>
+            <td>90</td>
+        </tr>
+    </table>
+    <table class = "small_table">
+      <tr>
+        <th>Требования для изучения:</th>
+      </tr>
+      <tr>
+        <td>1. Одержимый</td>
+      </tr>
+      <tr>
+        <td>2. Синтетик</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class = "main_text">
+    <h2>13. Редукция плазмы</h2>
+    <div>Генератор энергии уменьшает напряжение в блоках
+      и энергия, которая в них содержится, перетекает
+      в более простую форму взаимодействия. Это ускоряет
+      подачу энергии на орудийные платформы, но
+      негативно сказывается на качестве защитного экрана.</div>
+    <table class = "info_table" style="max-width: 400px; min-width: 400px;">
+        <tr>
+            <td></td>
+            <td>1 lvl</td>
+            <td>2 lvl</td>
+            <td>3 lvl</td>
+            <td>4 lvl</td>
+            <td>5 lvl</td>
+        </tr>
+        <tr class = "positive">
+            <td>мощность лазерных орудий</td>
+            <td>+2</td>
+            <td>+3</td>
+            <td>+4</td>
+            <td>+5</td>
+            <td>+6</td>
+        </tr>
+        <tr class = "positive">
+            <td>мощность поляризаторных орудий</td>
+            <td>+1</td>
+            <td>+3</td>
+            <td>+5</td>
+            <td>+7</td>
+            <td>+9</td>
+        </tr>
+        <tr class = "negative">
+            <td>мощность защитного экрана</td>
+            <td>-40</td>
+            <td>-55</td>
+            <td>-70</td>
+            <td>-85</td>
+            <td>-100</td>
+        </tr>
+    </table>
+    <table class = "small_table">
+      <tr>
+        <th>Требования для изучения:</th>
+      </tr>
+      <tr>
+        <td>1. Убийца</td>
+      </tr>
+      <tr>
+        <td>2. Одержимый</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class = "main_text">
+    <h2>14. Маскировочная система</h2>
+    <div>Технологически сложная пробная модель системы, которая маскирует
+      корабль от обнаружения, подделывая сигналы сканеров противника.
+      Система крайне сложна и требует фактического отключения
+      радара и двигателя, что значительно снижает их общие характеристики.
+      Маскировка раскрывается при активации орудийных систем или значительном сближении.<br>
+    <table class = "info_table" style="max-width: 400px; min-width: 400px;">
+        <tr>
+            <td></td>
+            <td>1 lvl</td>
+            <td>2 lvl</td>
+            <td>3 lvl</td>
+            <td>4 lvl</td>
+            <td>5 lvl</td>
+        </tr>
+        <tr class = "positive">
+            <td>дальность обнаружения</td>
+            <td>450</td>
+            <td>400</td>
+            <td>350</td>
+            <td>300</td>
+            <td>250</td>
+        </tr>
+        <tr class = "positive">
+            <td>дальность обнаружения при активации орудийных платформ</td>
+            <td>3000</td>
+            <td>2750</td>
+            <td>2500</td>
+            <td>2250</td>
+            <td>2000</td>
+        </tr>
+        <tr class = "negative">
+            <td>дальность действия радара</td>
+            <td>-1500</td>
+            <td>-1250</td>
+            <td>-1000</td>
+            <td>-750</td>
+            <td>-500</td>
+        </tr>
+        <tr class = "negative">
+            <td>мощность сканирования</td>
+            <td>-150</td>
+            <td>-125</td>
+            <td>-100</td>
+            <td>-75</td>
+            <td>-50</td>
+        </tr>
+        <tr class = "negative">
+            <td>скорость двигателя</td>
+            <td>-300</td>
+            <td>-255</td>
+            <td>-210</td>
+            <td>-165</td>
+            <td>-120</td>
+        </tr>
+        <tr class = "negative">
+            <td>энергопотребление</td>
+            <td>+1.8</td>
+            <td>+2.7</td>
+            <td>+3.6</td>
+            <td>+4.5</td>
+            <td>+5.4</td>
+        </tr>
+    </table>
+    <table class = "small_table">
+      <tr>
+        <th>Требования для изучения:</th>
+      </tr>
+      <tr>
+        <td>1. Исследователь</td>
+      </tr>
+      <tr>
+        <td>2. Синтетик</td>
+      </tr>
+    </table>
+  </div>
+
+    <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+
+    <label class="btn-menu" for="hmt">
+      <span class="first"></span>
+      <span class="second"></span>
+      <span class="third"></span>
+    </label>
+    
+    <ul class="hidden-menu">
+      <li><a href="space_objects.html">Космические объекты, планеты и станции</a></li>
+      <li><a href="diseases.html">Заболевания и стимуляторы</a></li>
+      <li><a href="onboard_programs.html" class="select_link">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Бортовые программы</a>
+      </li>
+      <li><a href="combat_programs.html">Программное оружие</a></li>
+      <li><a href="map.html">Карта галлактики</a></li>
+      <li><a href="equipment.html">Оборудование</a></li>
+      <li><a href="extension.html">Расширения</a></li>
+      <li><a href="weapons.html">Вооружение</a></li>
+      <li><a href="difficult.html">Сложность</a></li>
+      <li><a href="trade.html">Торговля</a></li>
+      <li><a href="ships.html">Корпуса</a></li>
+      <li><a href="skills.html">Навыки</a></li>
+      <li><a href="nations.html">Расы</a></li>
+      <li><a href="chips.html">Чипы</a></li>
+    </ul>
+</body>
+</html>

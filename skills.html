@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enigma</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="Style/class.css" type="text/css">
+    <link rel="stylesheet" href="Style/main_Style.css" type="text/css">
+    <link rel="stylesheet" href="Style/menu.css" type="text/css">
+    <style>
+      th {
+        line-height: 1.5;
+        font-weight: normal;
+        max-width: 80px;
+        min-width: 80px;
+        text-align: center;
+      }
+      .main_table th:nth-child(1) {
+        text-align: left;
+        max-width: 200px;
+        min-width: 200px;
+      }
+      .need {
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+
+  <div class = "main_text">
+    <h2 style="height: 40px; line-height: 3;">
+      1. Стрелок
+    </h2>   
+  </div>
+  <table class = "main_table">
+    <tr>
+      <td>Уровень</td>
+      <td>0 lvl</td>
+      <td>1 lvl</td>
+      <td>2 lvl</td>
+      <td>3 lvl</td>
+      <td>4 lvl</td>
+      <td>5 lvl</td>
+      <td>6 lvl</td>
+      <td>7 lvl</td>
+      <td>8 lvl</td>
+    </tr>
+    <tr>
+      <th>С некоторым шансом увеличвает силу выстрела на</th>
+      <th>0%</th>
+      <th>5%</th>
+      <th>10%</th>
+      <th>15%</th>
+      <th>20%</th>
+      <th>25%</th>
+      <th>30%</th>
+      <th>35%</th>
+      <th>40%</th>
+    </tr>
+    <tr>
+      <th>Шанс срабатывания</th>
+      <th>0%</th>
+      <th>4%</th>
+      <th>8%</th>
+      <th>12%</th>
+      <th>16%</th>
+      <th>20%</th>
+      <th>24%</th>
+      <th>28%</th>
+      <th>32%</th>
+    </tr>
+    <tr>
+      <th>Шанс оставить больше материалов после уничтожении астероида</th>
+      <th>20%</th>
+      <th>30%</th>
+      <th>40%</th>
+      <th>50%</th>
+      <th>60%</th>
+      <th>70%</th>
+      <th>80%</th>
+      <th>90%</th>
+      <th>100%</th>
+    </tr>
+    <tr>
+      <th><div class = "need">Требование к изучению:</div>
+        Нанести требуемое количество урона
+      </th>
+      <th></th>
+      <th>3.000 ед.</th>
+      <th>6.000 ед.</th>
+      <th>9.000 ед.</th>
+      <th>12.000 ед.</th>
+      <th>15.000 ед.</th>
+      <th>18.000 ед.</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </table>
+
+  <div class = "main_text">
+    <h2 style="height: 40px; line-height: 3;">
+      2. Пилот
+    </h2>   
+  </div>
+  <table class = "main_table">
+    <tr>
+      <td>Уровень</td>
+      <td>0 lvl</td>
+      <td>1 lvl</td>
+      <td>2 lvl</td>
+      <td>3 lvl</td>
+      <td>4 lvl</td>
+      <td>5 lvl</td>
+      <td>6 lvl</td>
+      <td>7 lvl</td>
+      <td>8 lvl</td>
+    </tr>
+    <tr>
+      <th>С некоторым шансом уменьшает получаемые повреждения на</th>
+      <th>0%</th>
+      <th>5%</th>
+      <th>10%</th>
+      <th>15%</th>
+      <th>20%</th>
+      <th>25%</th>
+      <th>30%</th>
+      <th>35%</th>
+      <th>40%</th>
+    </tr>
+    <tr>
+      <th>Шанс срабатывания</th>
+      <th>0%</th>
+      <th>4%</th>
+      <th>8%</th>
+      <th>12%</th>
+      <th>16%</th>
+      <th>20%</th>
+      <th>24%</th>
+      <th>28%</th>
+      <th>32%</th>
+    </tr>
+    <tr>
+      <th>Снижение повреждений оборудования в бою</th>
+      <th>0%</th>
+      <th>5%</th>
+      <th>10%</th>
+      <th>15%</th>
+      <th>20%</th>
+      <th>25%</th>
+      <th>30%</th>
+      <th>35%</th>
+      <th>40%</th>
+    </tr>
+    <tr>
+      <th><div class = "need">Требование к изучению:</div>
+        Получить требуемое количество повреждений корпуса или щита в бою
+      </th>
+      <th></th>
+      <th>2.000 ед.</th>
+      <th>4.000 ед.</th>
+      <th>6.000 ед.</th>
+      <th>8.000 ед.</th>
+      <th>10.000 ед.</th>
+      <th>12.000 ед.</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </table>
+
+  <div class = "main_text">
+    <h2 style="height: 40px; line-height: 3;">
+      3. Техник
+    </h2>   
+  </div>
+  <table class = "main_table">
+    <tr>
+      <td>Уровень</td>
+      <td>0 lvl</td>
+      <td>1 lvl</td>
+      <td>2 lvl</td>
+      <td>3 lvl</td>
+      <td>4 lvl</td>
+      <td>5 lvl</td>
+      <td>6 lvl</td>
+      <td>7 lvl</td>
+      <td>8 lvl</td>
+    </tr>
+    <tr>
+      <th>Износоустойчивость оборудования</th>
+      <th>100%</th>
+      <th>107%</th>
+      <th>114%</th>
+      <th>121%</th>
+      <th>128%</th>
+      <th>135%</th>
+      <th>142%</th>
+      <th>149%</th>
+      <th>156%</th>
+    </tr>
+    <tr>
+      <th>Максимально возможный процент ремонта корпуса за ход</th>
+      <th>35%</th>
+      <th>40%</th>
+      <th>45%</th>
+      <th>50%</th>
+      <th>55%</th>
+      <th>60%</th>
+      <th>65%</th>
+      <th>70%</th>
+      <th>75%</th>
+    </tr>
+    <tr>
+      <th><div class = "need">Требование к изучению:</div>
+        Отремонтировать требуемое количество повреждений оборудования
+      </th>
+      <th></th>
+      <th>2.500%</th>
+      <th>5.000%</th>
+      <th>7.500%</th>
+      <th>10.000%</th>
+      <th>12.500%</th>
+      <th>15.000%</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </table>
+
+  <div class = "main_text">
+    <h2 style="height: 40px; line-height: 3;">
+      4. Исследователь
+    </h2>   
+  </div>
+  <table class = "main_table">
+    <tr>
+      <td>Уровень</td>
+      <td>0 lvl</td>
+      <td>1 lvl</td>
+      <td>2 lvl</td>
+      <td>3 lvl</td>
+      <td>4 lvl</td>
+      <td>5 lvl</td>
+      <td>6 lvl</td>
+      <td>7 lvl</td>
+      <td>8 lvl</td>
+    </tr>
+    <tr>
+      <th>Уменьшение длительности исследования</th>
+      <th>-0%</th>
+      <th>-5%</th>
+      <th>-10%</th>
+      <th>-15%</th>
+      <th>-20%</th>
+      <th>-25%</th>
+      <th>-30%</th>
+      <th>-35%</th>
+      <th>-40%</th>
+    </tr>
+    <tr>
+      <th>Шанс обнаружения ценного предмета при исследовании</th>
+      <th>6%</th>
+      <th>8%</th>
+      <th>10%</th>
+      <th>12%</th>
+      <th>14%</th>
+      <th>16%</th>
+      <th>18%</th>
+      <th>20%</th>
+      <th>22%</th>
+    </tr>
+    <tr>
+      <th>Максимальный запас исследовательских зондов</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>11</th>
+    </tr>
+    <tr>
+      <th><div class = "need">Требование к изучению:</div>
+        Применить исследовательские зонды требуемое количество раз
+      </th>
+      <th></th>
+      <th>8</th>
+      <th>16</th>
+      <th>24</th>
+      <th>32</th>
+      <th>40</th>
+      <th>48</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </table>
+
+  <div class = "main_text">
+    <h2 style="height: 40px; line-height: 3;">
+      5. Торговец
+    </h2>   
+  </div>
+  <table class = "main_table">
+    <tr>
+      <td>Уровень</td>
+      <td>0 lvl</td>
+      <td>1 lvl</td>
+      <td>2 lvl</td>
+      <td>3 lvl</td>
+      <td>4 lvl</td>
+      <td>5 lvl</td>
+      <td>6 lvl</td>
+      <td>7 lvl</td>
+      <td>8 lvl</td>
+    </tr>
+    <tr>
+      <th>Стоимость продажи товаров</th>
+      <th>+0%</th>
+      <th>+0.6%</th>
+      <th>+1.2%</th>
+      <th>+1.8%</th>
+      <th>+2.4%</th>
+      <th>+3%</th>
+      <th>+3.6%</th>
+      <th>+4.2%</th>
+      <th>+4.8%</th>
+    </tr>
+    <tr>
+      <th>Стоимость продажи оборудования</th>
+      <th>50%</th>
+      <th>55%</th>
+      <th>60%</th>
+      <th>65%</th>
+      <th>70%</th>
+      <th>75%</th>
+      <th>80%</th>
+      <th>85%</th>
+      <th>90%</th>
+    </tr>
+    <tr>
+      <th><div class = "need">Требование к изучению:</div>
+        Заработать требуемую сумму на продаже товаров
+      </th>
+      <th></th>
+      <th>20.000</th>
+      <th>40.000</th>
+      <th>60.000</th>
+      <th>80.000</th>
+      <th>100.000</th>
+      <th>120.000</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </table>
+
+  <div class = "main_text">
+    <h2 style="height: 40px; line-height: 3;">
+      6. Убийца
+    </h2>   
+  </div>
+  <table class = "main_table">
+    <tr>
+      <td>Уровень</td>
+      <td>0 lvl</td>
+      <td>1 lvl</td>
+      <td>2 lvl</td>
+      <td>3 lvl</td>
+      <td>4 lvl</td>
+      <td>5 lvl</td>
+      <td>6 lvl</td>
+      <td>7 lvl</td>
+      <td>8 lvl</td>
+    </tr>
+    <tr>
+      <th>Оплачивамость заказов на ликвидацию цели</th>
+      <th>100%</th>
+      <th>105%</th>
+      <th>110%</th>
+      <th>115%</th>
+      <th>120%</th>
+      <th>125%</th>
+      <th>130%</th>
+      <th>135%</th>
+      <th>140%</th>
+    </tr>
+    <tr>
+      <th>Шанс сохранения оборудования после уничтожения корабля</th>
+      <th>6%</th>
+      <th>7%</th>
+      <th>8%</th>
+      <th>9%</th>
+      <th>10%</th>
+      <th>11%</th>
+      <th>12%</th>
+      <th>13%</th>
+      <th>14%</th>
+    </tr>
+    <tr>
+      <th>Максимум обломков после уничтожения корабля</th>
+      <th>2</th>
+      <th>2</th>
+      <th>3</th>
+      <th>3</th>
+      <th>3</th>
+      <th>4</th>
+      <th>4</th>
+      <th>4</th>
+      <th>5</th>
+    </tr>
+    <tr>
+      <th><div class = "need">Требование к изучению:</div>
+        Уничтожить требуемое количество кораблей
+      </th>
+      <th></th>
+      <th>7</th>
+      <th>14</th>
+      <th>21</th>
+      <th>28</th>
+      <th>35</th>
+      <th>42</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </table>
+
+  <div class = "main_text">
+    <h2 style="height: 40px; line-height: 3;">
+      7. Одержимый
+    </h2>   
+  </div>
+  <table class = "main_table">
+    <tr>
+      <td>Уровень</td>
+      <td>0 lvl</td>
+      <td>1 lvl</td>
+      <td>2 lvl</td>
+      <td>3 lvl</td>
+      <td>4 lvl</td>
+      <td>5 lvl</td>
+      <td>6 lvl</td>
+      <td>7 lvl</td>
+      <td>8 lvl</td>
+    </tr>
+    <tr>
+      <th>Время действия стимуляторов</th>
+      <th>+0%</th>
+      <th>+6%</th>
+      <th>+12%</th>
+      <th>+18%</th>
+      <th>+24%</th>
+      <th>+30%</th>
+      <th>+36%</th>
+      <th>+42%</th>
+      <th>+48%</th>
+    </tr>
+    <tr>
+      <th>Шанс возникновения зависимости, если принято более одного стимулятора</th>
+      <th>35%</th>
+      <th>31%</th>
+      <th>27%</th>
+      <th>23%</th>
+      <th>19%</th>
+      <th>15%</th>
+      <th>11%</th>
+      <th>7%</th>
+      <th>3%</th>
+    </tr>
+    <tr>
+      <th><div class = "need">Требование к изучению:</div>
+        Применить требуемое количество стимуляторов
+      </th>
+      <th></th>
+      <th>2</th>
+      <th>4</th>
+      <th>6</th>
+      <th>8</th>
+      <th>10</th>
+      <th>12</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </table>
+
+  <div class = "main_text">
+    <h2 style="height: 40px; line-height: 3;">
+      8. Синтетик
+    </h2>   
+  </div>
+  <table class = "main_table">
+    <tr>
+      <td>Уровень</td>
+      <td>0 lvl</td>
+      <td>1 lvl</td>
+      <td>2 lvl</td>
+      <td>3 lvl</td>
+      <td>4 lvl</td>
+      <td>5 lvl</td>
+      <td>6 lvl</td>
+      <td>7 lvl</td>
+      <td>8 lvl</td>
+    </tr>
+    <tr>
+      <th>Дополнительная дальность действия радара</th>
+      <th>0 ед.</th>
+      <th>100 ед.</th>
+      <th>200 ед.</th>
+      <th>300 ед.</th>
+      <th>400 ед.</th>
+      <th>500 ед.</th>
+      <th>600 ед.</th>
+      <th>700 ед.</th>
+      <th>800 ед.</th>
+    </tr>
+    <tr>
+      <th>Дополнительная мощность сканирования</th>
+      <th>0 ед.</th>
+      <th>7 ед.</th>
+      <th>14 ед.</th>
+      <th>21 ед.</th>
+      <th>28 ед.</th>
+      <th>35 ед.</th>
+      <th>42 ед.</th>
+      <th>49 ед.</th>
+      <th>56 ед.</th>
+    </tr>
+    <tr>
+      <th>Дополнительная дальность открытия кротовой норы</th>
+      <th>0 ед.</th>
+      <th>1 ед.</th>
+      <th>2 ед.</th>
+      <th>3 ед.</th>
+      <th>4 ед.</th>
+      <th>5 ед.</th>
+      <th>6 ед.</th>
+      <th>7 ед.</th>
+      <th>8 ед.</th>
+    </tr>
+    <tr>
+      <th><div class = "need">Требование к изучению:</div>
+        Совершить требуемое количество перелётов между системами
+      </th>
+      <th></th>
+      <th>10</th>
+      <th>20</th>
+      <th>30</th>
+      <th>40</th>
+      <th>50</th>
+      <th>60</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </table>
+    
+    <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+
+    <label class="btn-menu" for="hmt">
+      <span class="first"></span>
+      <span class="second"></span>
+      <span class="third"></span>
+    </label>
+    
+    <ul class="hidden-menu">
+      <li><a href="space_objects.html">Космические объекты, планеты и станции</a></li>
+      <li><a href="diseases.html">Заболевания и стимуляторы</a></li>
+      <li><a href="onboard_programs.html">Бортовые программы</a></li>
+      <li><a href="combat_programs.html">Программное оружие</a></li>
+      <li><a href="map.html">Карта галлактики</a></li>
+      <li><a href="equipment.html">Оборудование</a></li>
+      <li><a href="extension.html">Расширения</a></li>
+      <li><a href="weapons.html">Вооружение</a></li>
+      <li><a href="difficult.html">Сложность</a></li>
+      <li><a href="trade.html">Торговля</a></li>
+      <li><a href="ships.html">Корпуса</a></li>
+      <li><a href="skills.html" class="select_link">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Навыки</a></li>
+      <li><a href="nations.html">Расы</a></li>
+      <li><a href="chips.html">Чипы</a></li>
+    </ul>
+</body>
+</html>

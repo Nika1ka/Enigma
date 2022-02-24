@@ -1,0 +1,41 @@
+html {
+    font-family: sans-serif;
+    background-color: rgb(20, 20, 20);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+table {
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 0px;
+    display: table;
+}
+
+h3 {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+}
+a {
+    /*color: rgb(25, 70, 160);*/
+    color: rgba(200, 220, 255, 0.9);
+    text-decoration: none;
+}
+a:visited {
+    /*color: rgb(70, 25, 160);*/
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 18px;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin: 10px;
+    max-width: 500px;
+}
+pre {
+    font-family: sans-serif;
+}

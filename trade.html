@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enigma</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="Style/class.css" type="text/css">
+    <link rel="stylesheet" href="Style/main_Style.css" type="text/css">
+    <link rel="stylesheet" href="Style/menu.css" type="text/css">
+    <style> 
+      th {
+        text-align: left;
+        line-height: 1.5;
+        font-weight: normal;
+      }
+      .table_1 th:nth-child(1), .table_1 th:nth-child(2) {
+        max-width: 20px;
+        min-width: 20px;
+        text-align: center;
+      }
+      .table_1 th:nth-child(3), .table_2 th:nth-child(1) {
+        max-width: 200px;
+        min-width: 200px;
+        text-align: left;
+      }
+      .table_1 th:nth-child(4){
+        max-width: 300px;
+        min-width: 300px;
+      }
+      .table_1 th:nth-child(5), .table_1 th:nth-child(6) {
+        max-width: 110px;
+        min-width: 110px;
+      }
+
+      img {
+        width: 45%;
+      }
+    </style>
+</head>
+<body>
+
+  <div class = "main_text">
+    <h2 style="height: 40px; line-height: 3;">
+      Виды товаров
+    </h2>   
+  </div>
+  <table class = "main_table table_1">
+    <tr>
+      <td>№</td>
+      <td>Изображение</td>
+      <td>Название</td>
+      <td>Описание</td>
+      <td>Стоимость</td>
+      <td>Контрабанда</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <th><img src="Images/Products/1.png"></th>
+      <th>Кристаллы</th>
+      <th>
+        Редкие кристаллические образования, которые образуются в глубине астероидов и комет.
+      </th>
+      <th>22-30 ISK</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>2</th>
+      <th><img src="Images/Products/2.png"></th>
+      <th>Драгоценности</th>
+      <th>
+        Товары роскоши, декор или украшения из драгоценных камней и редких металлов.
+      </th>
+      <th>380-420 ISK</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>3</th>
+      <th><img src="Images/Products/3.png"></th>
+      <th>Продукты питания</th>
+      <th>
+        Питательные батончики разных вкусов, предназначенные для восполнения энергии. Имеют очень высокий срок хранения.
+      </th>
+      <th>36-44 ISK</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>4</th>
+      <th><img src="Images/Products/4.png"></th>
+      <th>Медикаменты</th>
+      <th>
+        Медицинское оборудование, инструменты и препараты для лечения большинства видов известных заболеваний и травм.
+      </th>
+      <th>46-54 ISK</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>5</th>
+      <th><img src="Images/Products/5.png"></th>
+      <th>Наркотические вещества</th>
+      <th>
+        Запрещённые психотропные препараты разного типа действия. Почти везде являются контрабандным товаром.
+      </th>
+      <th>575-630 ISK</th>
+      <th>85%</th>
+    </tr>
+    <tr>
+      <th>6</th>
+      <th><img src="Images/Products/6.png"></th>
+      <th>Нестабильное топливо</th>
+      <th>
+        Необработанное и взрывоопасное ракетное топливо. Требует дальнейшей фильтрации для применения.
+      </th>
+      <th>11-22 ISK</th>
+      <th>10%</th>
+    </tr>
+    <tr>
+      <th>7</th>
+      <th><img src="Images/Products/7.png"></th>
+      <th>Оружие</th>
+      <th>
+        Разнообразные типы оружия и ведения боевых действий. Торговля оружием, по большей части, запрещена.
+      </th>
+      <th>145-168 ISK</th>
+      <th>70%</th>
+    </tr>
+    <tr>
+      <th>8</th>
+      <th><img src="Images/Products/8.png"></th>
+      <th>Минералы</th>
+      <th>
+        Минералы, оставшиеся после разрушения астероида. Представляют наибольшую ценность лишь после обработки.
+      </th>
+      <th>12-17 ISK</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>9</th>
+      <th><img src="Images/Products/9.png"></th>
+      <th>Строительные материалы</th>
+      <th>
+        Различные высокопрочные материалы для возведения сооружений и не только.
+      </th>
+      <th>26-35 ISK</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>10</th>
+      <th><img src="Images/Products/10.png"></th>
+      <th>Техническое оборудование</th>
+      <th>
+        Проводники, универсальные печатные платы и накопители, предназначенные для разных целей.
+      </th>
+      <th>77-90 ISK</th>
+      <th></th>
+    </tr>
+  </table>
+
+  <div class = "main_text">
+    <h2 style="height: 40px; line-height: 3;">
+      Прочая информация
+    </h2>
+    Покупка на 1 + 5% ISK дороже продажи данного товара.<br>
+    Процент зависит от кол-ва товара на складе. Чем больше - тем ниже цена покупки. Цены продажи и покупки снижаются на 1% за каждые 300ед. товара.<br>
+    Цена товаров повышается на 1% каждые 40 ходов.<br>
+    После преодоления 500% (13.7 лет) цены растут на 1% за каждые 100 ходов (не более 1000% за 48 лет).<br>
+    Стоимость продажи запрещённых товаров повышается на 12%.<br>
+    Стоимость покупки запрещённых товаров снижается на 12%.
+  </div>
+
+
+    <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+
+    <label class="btn-menu" for="hmt">
+      <span class="first"></span>
+      <span class="second"></span>
+      <span class="third"></span>
+    </label>
+    
+    <ul class="hidden-menu">
+      <li><a href="space_objects.html">Космические объекты, планеты и станции</a></li>
+      <li><a href="diseases.html">Заболевания и стимуляторы</a></li>
+      <li><a href="onboard_programs.html">Бортовые программы</a></li>
+      <li><a href="combat_programs.html">Программное оружие</a></li>
+      <li><a href="map.html">Карта галлактики</a></li>
+      <li><a href="equipment.html">Оборудование</a></li>
+      <li><a href="extension.html">Расширения</a></li>
+      <li><a href="weapons.html">Вооружение</a></li>
+      <li><a href="difficult.html">Сложность</a></li>
+      <li><a href="trade.html" class="select_link">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>Торговля</a>
+      </li>
+      <li><a href="ships.html">Корпуса</a></li>
+      <li><a href="skills.html">Навыки</a></li>
+      <li><a href="nations.html">Расы</a></li>
+      <li><a href="chips.html">Чипы</a></li>
+    </ul>
+</body>
+</html>

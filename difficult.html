@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enigma</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="Style/class.css" type="text/css">
+    <link rel="stylesheet" href="Style/main_Style.css" type="text/css">
+    <link rel="stylesheet" href="Style/menu.css" type="text/css">
+    <style>
+    .main_table th {
+      text-align: center;
+      line-height: 1.5;
+      font-weight: normal;
+      max-width: 120px;
+      min-width: 120px;
+    }
+    .main_table th:nth-child(1) {
+      max-width: 20px;
+      min-width: 20px;
+    }
+    .main_table th:nth-child(2) {
+      max-width: 160px;
+      min-width: 160px;
+      text-align: left;
+    }
+    </style>
+</head>
+<body>
+
+  <div class = "main_text">
+    <h2 style="height: 40px; line-height: 3;">
+      Сложность
+    </h2>   
+  </div>
+  <table class = "main_table">
+    <tr>
+      <td>№</td>
+      <td>Описание</td>
+      <td>Легко</td>
+      <td>Средне</td>
+      <td>Сложно</td>
+      <td>Эксперт</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <th>Скорость работы учёных</th>
+      <th>+20%</th>
+      <th>+0%</th>
+      <th>-20%</th>
+      <th>-40%</th>
+    </tr>
+    <tr>
+      <th>2</th>
+      <th>Военная мощь Федерации и Империи</th>
+      <th>Высокая</th>
+      <th>Достаточная</th>
+      <th>Низкая</th>
+      <th>Очень низкая</th>
+    </tr>
+    <tr>
+      <th>3</th>
+      <th>Сопротивление корпусов в магазинах</th>
+      <th>+5%</th>
+      <th>+0%</th>
+      <th>-5%</th>
+      <th>-10%</th>
+    </tr>
+    <tr>
+      <th>4</th>
+      <th>Оплачиваемость заданий</th>
+      <th>+15%</th>
+      <th>+0%</th>
+      <th>-15%</th>
+      <th>-30%</th>
+    </tr>
+    <tr>
+      <th>5</th>
+      <th>Прочность стартового оборудования</th>
+      <th>100%</th>
+      <th>80%</th>
+      <th>60%</th>
+      <th>40%</th>
+    </tr>
+    <tr>
+      <th>6</th>
+      <th>Износоустойчивость оборудования</th>
+      <th>+25%</th>
+      <th>+0%</th>
+      <th>-25%</th>
+      <th>-50%</th>
+    </tr>
+    <tr>
+      <th>7</th>
+      <th>Прочность корпусов Реликтов</th>
+      <th>85%</th>
+      <th>100%</th>
+      <th>115%</th>
+      <th>130%</th>
+    </tr>
+    <tr>
+      <th>8</th>
+      <th>Урон Реликтов</th>
+      <th>85%</th>
+      <th>100%</th>
+      <th>115%</th>
+      <th>130%</th>
+    </tr>
+    <tr>
+      <th>9</th>
+      <th>Стоимость покупки оборудования</th>
+      <th>100%</th>
+      <th>120%</th>
+      <th>140%</th>
+      <th>160%</th>
+    </tr>
+    <tr>
+      <th>10</th>
+      <th>Стартовые вместимость и прочность корпуса</th>
+      <th>+30 ед.</th>
+      <th>+0 ед.</th>
+      <th>-30 ед.</th>
+      <th>-60 ед.</th>
+    </tr>
+    <tr>
+      <th>11</th>
+      <th>Стартовых навыков изучено до 2-го уровня</th>
+      <th>3</th>
+      <th>2</th>
+      <th>1</th>
+      <th>0</th>
+    </tr>
+    <tr>
+      <th>12</th>
+      <th>Скорость изучения навыков</th>
+      <th>+20%</th>
+      <th>+0%</th>
+      <th>-20%</th>
+      <th>-40%</th>
+    </tr>
+  </table>
+    
+    <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+
+    <label class="btn-menu" for="hmt">
+      <span class="first"></span>
+      <span class="second"></span>
+      <span class="third"></span>
+    </label>
+    
+    <ul class="hidden-menu">
+      <li><a href="space_objects.html">Космические объекты, планеты и станции</a></li>
+      <li><a href="diseases.html">Заболевания и стимуляторы</a></li>
+      <li><a href="onboard_programs.html">Бортовые программы</a></li>
+      <li><a href="combat_programs.html">Программное оружие</a></li>
+      <li><a href="map.html">Карта галлактики</a></li>
+      <li><a href="equipment.html">Оборудование</a></li>
+      <li><a href="extension.html">Расширения</a></li>
+      <li><a href="weapons.html">Вооружение</a></li>
+      <li><a href="difficult.html" class="select_link">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Сложность</a>
+      </li>
+      <li><a href="trade.html">Торговля</a></li>
+      <li><a href="ships.html">Корпуса</a></li>
+      <li><a href="skills.html">Навыки</a></li>
+      <li><a href="nations.html">Расы</a></li>
+      <li><a href="chips.html">Чипы</a></li>
+  </ul>
+</body>
+</html>
